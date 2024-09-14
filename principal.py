@@ -7,11 +7,11 @@ while True:
         opcion = input('Ingrese una opcion \n 1-Para registrar libro \n 2 - Para mostrar los libros \n 0-Para Salir: \n')
     
         
-        if opcion == "0":
+        if opcion == "1":
            # Salir 
             break
         
-        elif opcion == "1":
+        elif opcion == "2":
             
             titulo = input("Ingrese titulo del libro: ").strip()
             while True:
@@ -38,7 +38,7 @@ while True:
             funcion.registrarLibro(titulo, autor, anio) 
             print('*** Se registro el libro correctamente *** \n')
             
-        elif opcion == "2":
+        elif opcion == "3":
             funcion.mostrarLibros('libros.txt')
             
         else:
